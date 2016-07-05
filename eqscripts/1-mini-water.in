@@ -1,0 +1,17 @@
+minimization run for water and counterions 
+ &cntrl
+ ig=-1
+ imin=1, ntr=1,
+ ncyc=1000, maxcyc=5000,
+ ntb=1,
+ cut=10,
+ ntpr=50,
+ restraintmask=':1-1054', restraint_wt=10.0
+ &end
+#Group input for restrained atoms
+# 10.00
+#RES 1 replace
+#END
+#END
+
+

@@ -1,0 +1,29 @@
+ equilibracion 
+&cntrl
+  ig=-1
+  imin   = 0,
+  irest  = 1,
+  ntx    = 5,
+  ntb    = 1,
+  cut    = 10,
+  ntr    = 0,
+  ntc    = 2,
+  ntf    = 2,
+  tempi  = 300.0,
+  temp0  = 300.0,
+  ntt    = 3,
+  gamma_ln = 1.0,
+  nstlim = 20000, dt = 0.001
+  ntpr = 500, ntwx = 500, ntwr = 1000
+  ioutfm=1
+ /
+#Keep molecule fixed with weak restraints
+#2.0
+#RES 1 replace
+#END
+#END
+
+
+
+
+

@@ -1,0 +1,8 @@
+trajin production.mdcrd 100 100
+strip :WAT
+strip :Cl-
+strip :Na+
+center 
+image
+trajout 1ns-snapshot.pdb pdb
+

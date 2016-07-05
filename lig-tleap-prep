@@ -1,0 +1,10 @@
+set default pbradii mbondi2
+source leaprc.ff03.r1
+source leaprc.gaff
+loadamberparams lig.frcmod
+LIG=loadmol2 lig.mol2
+check LIG
+saveamberparm LIG lig.prmtop lig.inpcrd
+savepdb LIG lig-tleaped.pdb
+saveoff LIG lig.off
+quit

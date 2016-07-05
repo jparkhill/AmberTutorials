@@ -1,0 +1,14 @@
+set default pbradii mbondi2
+source leaprc.ff03.r1
+source leaprc.gaff
+loadamberparams lig.frcmod
+loadoff lig.off
+holo=loadpdb protein-lig.pdb
+addions holo Na+ 0
+addions holo Cl- 0
+savepdb holo protein-lig-ions.pdb
+solvatebox holo TIP3PBOX 10.0
+savepdb holo protein-lig-ions-solv.pdb
+saveamberparm holo protein-lig-ions-solv.prmtop protein-lig-ions-solv.inpcrd
+check holo
+quit
